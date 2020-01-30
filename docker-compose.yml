@@ -3,7 +3,7 @@ version: '3.7'
 services:
     app:
         build: ./
-        command: streamlit run app/main.py --server.port 8501
+        command: streamlit run app/main.py --server.port 8501 --browser.gatherUsageStats false --server.enableCORS false
         volumes:
             - ./:/usr/src/app
         ports:
